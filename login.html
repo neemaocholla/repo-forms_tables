@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        #heading{
+            text-align: start;
+        }
+        .signin_form{
+            border: solid 1px;
+            width: 30%;
+            height: auto;
+            text-align: start;
+            margin: 0 auto;
+            padding: 18px;
+        }
+        #email{
+            padding: 18px 10px;
+            width: 85%;
+            border-radius: 5px;
+            border: solid 2px;
+
+        }
+        #password{
+            padding: 18px 10px;
+            width: 85%;
+            border-radius: 5px;
+            border: solid 2px;
+        }
+        .signin_form button{
+            padding: 18px 10px;
+            width: 92%;
+            margin: 10px 0;
+            color: white;
+            background: none;
+            background-color: black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+             color: black;
+         }
+         form{
+    height: 800px;
+    background-color: white;
+}
+         .hr-lines{
+          position: relative;
+          max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.icon{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 2cm;
+    size: 10px;
+}
+  
+        
+    </style>
+</head>
+<body style="background-color: mistyrose;">
+    <form  action="table.html" method="get" class="signin_form">
+        <p>Don't have an Account?<a href="index.html"><b>Sign Up</b></a></p>
+        <h1 id="heading">Sign In</h1>
+        <label for="email">Email</label>
+        <br>
+        <input id="email" placeholder="Enter Email" type="email">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input id="password" placeholder="Password" type="password" required/>
+        <br>
+        <input type="checkbox"  checked="checked" id="Terms">
+        <label for="Terms">I've Read and agreed With the <b>Terms of Services</b> And Our <b>Privacy Policy</b></label>
+        <br>
+        <button type="submit id="signin_button" ">Sign In</a></button>
+<br>
+<br>
+        <h2 class="hr-lines">Or Sign In With</h2>
+        <div class="icon">
+            <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+            <i class="fa-brands fa-google" style="color: #0d0d0d;"></i>
+        </div>
+    </form>
+</body>
+</html>
